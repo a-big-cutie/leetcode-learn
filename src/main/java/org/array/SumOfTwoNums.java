@@ -28,6 +28,5 @@ public class SumOfTwoNums {
         SumOfTwoNums sumOfTwoNums = new SumOfTwoNums();
         int[] resultArray = sumOfTwoNums.getArrayIndex(inrArrays,9);
         System.out.println(Arrays.toString(resultArray));
-        System.out.println(Arrays.toString(sumOfTwoNums.getArrayIndex(inrArrays,9)));
     }
 }
