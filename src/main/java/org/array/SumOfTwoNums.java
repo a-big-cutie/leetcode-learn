@@ -1,7 +1,5 @@
 package org.array;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -40,15 +38,14 @@ public class SumOfTwoNums {
         throw new IllegalArgumentException("No such element");
     }
 
-    private static final Logger logger = LoggerFactory.getLogger(SumOfTwoNums.class);
 
 
     public static void main(String[] args) {
         int[] inrArrays = new int[]{2,7,11,15};
         SumOfTwoNums sumOfTwoNums = new SumOfTwoNums();
         int[] resultArray = sumOfTwoNums.getArrayIndex(inrArrays,9);
-        logger.info("result array,{}",Arrays.toString(resultArray));
+        System.out.println("result array,{}" + Arrays.toString(resultArray));
         int[] resultHashArray = sumOfTwoNums.getHashIndex(inrArrays,9);
-        logger.info("result hash array,{}",Arrays.toString(resultHashArray));
+        System.out.println("result hash array,{}" + Arrays.toString(resultHashArray));
     }
 }
